@@ -4,6 +4,8 @@ import Statistics from './components/Statistics/Statistics.jsx';
 import statistic from './components/Statistics/Statistics.json';
 import FriendList from './components/FriendList/FriendList.jsx';
 import friendList from './components/FriendList/FriendList.json';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory.jsx';
+import transactions from './components/TransactionHistory/Transactions.json';
 
 export default function App() {
   return (
@@ -17,9 +19,9 @@ export default function App() {
         views={user.stats.views}
         likes={user.stats.likes}
       />
-
       <Statistics stats={statistic} title="Upload stats" />
       <FriendList friends={friendList} colors={{ activeStyle: 'active' }} />
+      <TransactionHistory items={transactions} />;
     </div>
   );
 }

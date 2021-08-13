@@ -7,7 +7,7 @@ const FriendList = ({friends}) => {
 <ul className={s.friendList}>
     {friends.map(friend => (
   <li className={s.item} key={friend.id}>
-            <span className={s.status} style={friend.isOnline ? { backgroundColor: 'red' } : { backgroundColor: 'green' }}>{friend.isOnline}</span>
+     <span className={s.status} style={friend.isOnline ? { backgroundColor: 'red' } : { backgroundColor: 'green' }}></span>
        <img className={s.avatar} src={friend.avatar} alt="" width="48" />
      <p className={s.name}>{friend.name}</p>
   </li>))}
@@ -18,7 +18,7 @@ const FriendList = ({friends}) => {
 
 FriendList.propTypes = {
     friends: PropTypes.arrayOf(PropTypes.shape({
-        id: PropTypes.number,
+        id: PropTypes.number.isRequired,
         avatar: PropTypes.string,
         name: PropTypes.string,
         isOnline: PropTypes.bool,
