@@ -1,6 +1,6 @@
 .statistics {
   margin: 0 auto;
-  width: 400px;
+  width: 450px;
 }
 
 .title {
@@ -9,6 +9,8 @@
   font-weight: 700;
   color: rgb(80, 79, 79);
   background-color: #fff;
+  margin: 0;
+  margin-top: 20px;
   padding: 20px;
 }
 
@@ -16,6 +18,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-top: 20px;
   display: flex;
 }
 
